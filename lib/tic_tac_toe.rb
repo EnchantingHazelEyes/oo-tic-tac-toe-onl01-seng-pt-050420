@@ -15,7 +15,7 @@ class TicTacToe
     [2,4,6]  #Diagonal Right-to-left
   ]
   
-  def display_board
+  def display_board   #Displays the TicTacToe game board 
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
@@ -23,11 +23,11 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   
-   def current_player
+   def current_player #Alternate between players
     turn_count % 2 == 0 ? "X" : "O"
   end
  
-  def turn_count
+  def turn_count 
     @board.count{|token| token == "X" || token == "O"}
   end
   
