@@ -31,4 +31,6 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
   
+  def input_to_index
+  
 end 
