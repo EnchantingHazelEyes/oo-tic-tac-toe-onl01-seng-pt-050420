@@ -1,14 +1,14 @@
 class TicTacToe
   
   def initialize(board = nil)
-    @board = Array.new(9, " ")
+    @board = Array.new(9, " ") #new board setup 
   end 
   
-  WIN_COMBINATIONS = [
-    [0,1,2],
-    [3,4,5],
-    [6,7,8],
-    [0,3,6],
+  WIN_COMBINATIONS = [ #All possible combinations
+    [0,1,2], #Top 
+    [3,4,5], #Middle
+    [6,7,8], #Bottom
+    [0,3,6], #Left Col
     [1,4,7],
     [2,5,8],
     [0,4,8],
