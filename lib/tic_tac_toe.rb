@@ -5,8 +5,9 @@ class TicTacToe
   end 
   
   WIN_COMBINATIONS[
-    [1,5,7]
+    [0,]
     []
+    ]
   
   
 end 
