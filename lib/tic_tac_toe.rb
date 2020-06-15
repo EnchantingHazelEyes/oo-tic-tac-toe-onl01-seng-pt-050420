@@ -60,6 +60,13 @@ class TicTacToe
     end
   end
   
-  
+   def draw?
+    !won? && full?
+  end
+
+  # #full? checks to see if the board is full, ie no empty spaces remain
+  def full?
+    !@board.any?{|x| x == "" || x == " "}
+  end
   
 end 
